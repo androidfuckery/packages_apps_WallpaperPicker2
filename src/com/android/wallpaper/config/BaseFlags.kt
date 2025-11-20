@@ -100,11 +100,11 @@ abstract class BaseFlags {
 
     open fun isRefactorWallpaperInfoFlag() = refactorWallpaperInfoFlag()
 
-    open fun isEnableAndroidPhotoPicker() = enableAndroidPhotopicker()
+    fun isEnableAndroidPhotoPicker() = true
 
     // This is just a local flag in order to ensure right behaviour in case
     // something goes wrong with PhotoPicker integration.
-    open fun isPhotoPickerEnabled() = false
+    fun isPhotoPickerEnabled() = true
 
     // This flag is to gate the dependency of default recents on new categories
     // fetching logic.
