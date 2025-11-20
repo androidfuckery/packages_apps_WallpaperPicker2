@@ -87,9 +87,7 @@ abstract class BaseFlags {
 
     open fun isRefactorWallpaperPreviewScreenEnabled() = refactorWallpaperPreviewScreenFlag()
 
-    // This is just a local flag in order to ensure right behaviour in case
-    // something goes wrong with PhotoPicker integration.
-    open fun isPhotoPickerEnabled() = false
+    fun isPhotoPickerEnabled() = true
 
     open fun isKeyguardQuickAffordanceEnabled(context: Context): Boolean {
         return getCachedFlags(context)
